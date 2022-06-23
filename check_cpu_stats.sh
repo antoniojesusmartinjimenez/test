@@ -22,30 +22,6 @@
 #- Search Binary Path (iostat,sar) or Add Path parameter when other as default
 #
 # ========================================================================================
-#
-# HISTORY :
-#     Release|     Date|    Authors |Description
-# -------------+------------+------------------+------------------------------------------------------------------------------------
-#  2.0| 16.02.08| Steve Bosek| Solaris support and new parameters 
-#                New Parameters : - iostat seconds intervals 
-#                - iostat report number
-#  2.1 | 08.06.08 | Steve Bosek | Bug perfdata and convert comma in point for Linux result
-#  2.1.1 | 05.12.08 | Steve Bosek   | Fixed improperly terminated string that was left open at line 130 
-#  2.1.2| 06.12.08 | Bas van der Doorn | Fixed linux steal reported as idle, comparisons
-#  2.2| 06.12.08| Bas van der Doorn| Capable systems will output nice and steal data
-#  2.2.1| 06.12.08| Steve Bosek| Add for uniform Unix output nice and steal data on all perfdata  
-#  2.3   | 11.12.08  | Steve Bosek   |  Add Threshold for user and system output with format -w user,system,iowait -c user,system,iowait
-#                                       Add Default parameters value for threshold if not define
-#                                       Add check for ${TAB_WARNING_THRESHOLD[@]} and ${TAB_CRITICAL_THRESHOLD[@]}
-#                                       Add verify for Critical CPU Threshold lower as Warning CPU threshold
-# 2.3.1 | 16.12.08 | Steve Bosek   |    Potability AIX,SOLARIS,LINUX for table initialisation (TAB_WARNING_THRESHOLD and TAB_CRITICAL_THRESHOLD)   
-# 2.3.2 | 22.12.08  | Steve Bosek  |    Strict Guideline Nagios for perfdata    
-# 2.3.3| 08.02.08| Philipp Lemke| Add HP-UX support (tested on HP-UX B.11.23 U ia64) - steve bosek : uniform perfdata 
-# 2.3.4 | 29.03.09  | Steve Bosek  |   Bug in line 176: return only critical state for warning condition for USER Stats.
-# 2.3.5 | 05.05.09 | Steve Bosek | Bug fix in NAGIOS_DATA for HP-UX
-# 2.3.6 | 05.08.11 | Steve Bosek | Bug fix in NAGIOS_DATA : replace comma with semicolon in perfdata - compatibility with pnp
-# -----------------------------------------------------------------------------------------
-
 
 # Paths to commands used in this script.  These may have to be modified to match your system setup.
 
